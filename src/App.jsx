@@ -1,10 +1,10 @@
 import PublicLayout from 'layouts/PublicLayout';
-import Login from 'pages/Login';
+import Login from 'pages/auth/Login';
 import Admin from 'pages/admin/Index';
-import Registro from 'pages/Registro';
+import Registro from 'pages/auth/Registro';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'styles/styles.css'
-import Index from 'pages/Index';
+import Index from 'pages/auth/Index';
 import PrivateLayout from 'layouts/PrivateLayout';
 import AuthLayout from 'layouts/AuthLayout';
 import Vehiculos from 'pages/admin/Vehiculos';
@@ -23,7 +23,7 @@ function App() {
               <Route path='/admin/clientes'>
                 <Clientes/>
               </Route>
-              <Route path='admin'>
+              <Route path='/admin'>
                 <Admin/>
               </Route>
             </Switch>
